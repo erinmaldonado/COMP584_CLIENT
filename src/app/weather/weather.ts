@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 export class Weather {
   forecasts: WeatherData[] = [];
   constructor(http: HttpClient) {
-    http.get<WeatherData[]>('https://localhost:5177/WeatherForecast').subscribe(result => {
+    http.get<WeatherData[]>('http://localhost:5177/WeatherForecast').subscribe(result => {
       this.forecasts = result;
     });
   }
