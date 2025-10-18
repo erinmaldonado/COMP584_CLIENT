@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './weather.html',
   styleUrl: './weather.scss'
 })
+
 export class Weather {
   forecasts: WeatherData[] = [];
   constructor(http: HttpClient) {
